@@ -35,7 +35,7 @@ public class JhonMov : MonoBehaviour
 
     private void Jump()
     {
-        Fisicas.AddForce(Vector2.up);
+        Fisicas.AddForce(Vector2.up*JumpForce); 
     }
 
     
