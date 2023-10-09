@@ -1,14 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class GruntScript : MonoBehaviour
+public class BossHead : MonoBehaviour
 {
     public GameObject Jhon;
     private float LastShoot;
-    public GameObject BulletEnemy;
-    private int Life = 2;
+    public GameObject BulletEnemy;  
+    private int Life = 5;
+    public GameObject Bossbody;
 
     private void Update()
     {
@@ -31,17 +32,16 @@ public class GruntScript : MonoBehaviour
     }
     private void Shoot()
     {
-        
         Vector3 direction;
         if (transform.localScale.x == 1.0f) direction = Vector3.right;
         else direction = Vector3.left;
         GameObject bullet = Instantiate(BulletEnemy, transform.position + direction * 0.1f, Quaternion.identity);
         bullet.GetComponent<BulletEnemyScript>().SetDirection(direction);
+
     }
     public void Hit()
     {
         Life = Life - 1;
         if (Life == 0) Destroy(gameObject);
     }
-
 }
