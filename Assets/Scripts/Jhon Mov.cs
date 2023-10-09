@@ -7,12 +7,13 @@ public class JhonMov : MonoBehaviour
     public GameObject Bulletprefab;
     public float Speed;
     public float JumpForce;
+
      
     private Rigidbody2D Fisicas;
     private Animator Animator;
     private float Horizontal;
     private bool Grounded;
-
+    private int Life = 5;
 
     void Start()
     {
@@ -69,5 +70,11 @@ public class JhonMov : MonoBehaviour
         else direction = Vector3.left;
         GameObject bullet = Instantiate(Bulletprefab, transform.position + direction * 0.1f, Quaternion.identity);
         bullet.GetComponent<bulletscript>().SetDirection(direction);
+    }
+
+    public void Hit()
+    {
+        Life = Life - 1;
+        if (Life == 0) Destroy(gameObject);
     }
 }

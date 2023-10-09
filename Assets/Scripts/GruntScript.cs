@@ -7,6 +7,8 @@ public class GruntScript : MonoBehaviour
 {
     public GameObject Jhon;
     private float LastShoot;
+    public GameObject BulletEnemy;
+    private int Life = 2;
 
     private void Update()
     {
@@ -27,7 +29,16 @@ public class GruntScript : MonoBehaviour
     }
     private void Shoot()
     {
-        Debug.Log("Shoot");
+        Vector3 direction;
+        if (transform.localScale.x == 1.0f) direction = Vector3.right;
+        else direction = Vector3.left;
+        GameObject bullet = Instantiate(BulletEnemy, transform.position + direction * 0.1f, Quaternion.identity);
+        bullet.GetComponent<bulletscript>().SetDirection(direction);
+    }
+    public void Hit()
+    {
+        Life = Life - 1;
+        if (Life == 0) Destroy(gameObject);
     }
 
 }
