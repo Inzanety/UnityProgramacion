@@ -28904,6 +28904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Jhon: {fileID: 642077221}
+  BulletEnemy: {fileID: 2431444037584968752, guid: 6a735a2b9b37e384b947beac4ccb8d48, type: 3}
 --- !u!1 &1881620155
 GameObject:
   m_ObjectHideFlags: 0

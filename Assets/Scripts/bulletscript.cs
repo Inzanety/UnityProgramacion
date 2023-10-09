@@ -26,4 +26,19 @@ public class bulletscript : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        JhonMov Jhon = collision.collider.GetComponent<JhonMov>();
+        GruntScript Grunt = collision.collider.GetComponent<GruntScript>();
+        if (Jhon != null)
+        {
+            Jhon.Hit();
+
+        }
+        if (Grunt != null)
+        {
+            Grunt.Hit();
+        }
+        DestroyBullet();
+    }
 }
