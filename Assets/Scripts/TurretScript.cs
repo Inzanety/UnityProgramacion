@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class GruntScript : MonoBehaviour
+public class TurretScript : MonoBehaviour
 {
     public GameObject Jhon;
     private float LastShoot;
     public GameObject BulletEnemy;
-    private int Life = 2;
+    private int Life = 1;
 
     private void Update()
     {
@@ -20,7 +19,7 @@ public class GruntScript : MonoBehaviour
 
         float distance = Mathf.Abs(Jhon.transform.position.x - transform.position.x);
 
-        if (distance < 1.0f && Time.time > LastShoot + 0.25f)
+        if (distance < 1.0f && Time.time > LastShoot +0.55f)
         {
             Shoot();
             LastShoot = Time.time;
@@ -31,7 +30,7 @@ public class GruntScript : MonoBehaviour
     }
     private void Shoot()
     {
-        
+
         Vector3 direction;
         if (transform.localScale.x == 1.0f) direction = Vector3.right;
         else direction = Vector3.left;
@@ -43,5 +42,4 @@ public class GruntScript : MonoBehaviour
         Life = Life - 1;
         if (Life == 0) Destroy(gameObject);
     }
-
 }

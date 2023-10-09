@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1878909240024039242}
   - component: {fileID: 7525907304837491251}
   - component: {fileID: 6774588832042296963}
-  - component: {fileID: 2422359665389581665}
   - component: {fileID: 2223202550973588513}
   - component: {fileID: -8358038039756968720}
+  - component: {fileID: -8970966585832342883}
   m_Layer: 0
   m_Name: BulletEnemy
   m_TagString: Untagged
@@ -109,19 +109,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2422359665389581665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2431444037584968752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc1acb0dd47655140ad372d97ea23de1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 3
 --- !u!50 &2223202550973588513
 Rigidbody2D:
   serializedVersion: 4
@@ -178,9 +165,22 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.08, y: 0.08}
   m_Direction: 0
+--- !u!114 &-8970966585832342883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2431444037584968752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd700444e40505e4194bf84cebf17060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2
