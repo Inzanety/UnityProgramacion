@@ -2037,6 +2037,8 @@ MonoBehaviour:
   Bulletprefab: {fileID: 1754830938562833856, guid: 436931cc8ed55d74ca0c0cf07f719297, type: 3}
   Speed: 0
   JumpForce: 350
+  SaltoJhon: {fileID: 1214485572380162826, guid: a78c1cd2ba1a0fa4ba66b301894106e1, type: 3}
+  DisparoJhon: {fileID: 3830105021404097128, guid: 0facc316564a9a847953d6265686c837, type: 3}
 --- !u!95 &642077227
 Animator:
   serializedVersion: 5
