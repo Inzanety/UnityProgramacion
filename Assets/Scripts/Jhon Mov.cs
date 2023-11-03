@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class JhonMov : MonoBehaviour
 {
+    public GameObject Bulletprefab;
     public float Speed;
     public float JumpForce;
+
      
     private Rigidbody2D Fisicas;
     private Animator Animator;
     private float Horizontal;
     private bool Grounded;
+    private int Life = 5;
 
-
+    [Header("Sonidos")]
+    [SerializeField] GameObject SaltoJhon;
+    [SerializeField] GameObject DisparoJhon;
     void Start()
     {
         Animator = GetComponent<Animator>();
@@ -44,9 +49,14 @@ public class JhonMov : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W)&&Grounded)
         {
             Jump();
+            Instantiate (SaltoJhon);
 
         }
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Shoot();
+            Instantiate(DisparoJhon);
+        }
     }
     private void FixedUpdate()
     {
@@ -58,7 +68,19 @@ public class JhonMov : MonoBehaviour
         Fisicas.AddForce(Vector2.up*JumpForce); 
     }
 
-    
-   
+    private void Shoot()
+    {
+        
+        Vector3 direction;
+        if (transform.localScale.x == 1.0f) direction = Vector3.right;
+        else direction = Vector3.left;
+        GameObject bullet = Instantiate(Bulletprefab, transform.position + direction * 0.1f, Quaternion.identity);
+        bullet.GetComponent<bulletscript>().SetDirection(direction);
+    }
 
+    public void Hit()
+    {
+        Life = Life - 1;
+        if (Life == 0) Destroy(gameObject);
+    }
 }

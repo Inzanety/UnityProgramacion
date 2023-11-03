@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 153245f728986ee4bb8f707658286c90
+guid: aff8de5d92194e34cab4f193ae696f0d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,270 +119,362 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BossHeadIdle_0
+      name: Kiwi_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 45
-        height: 66
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee994f0419455404e8660faac7d46616
-      internalID: -1734386131
+      spriteID: 8dfae60d6ad30fe4fa024438f0539d4a
+      internalID: 871071450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_1
+      name: Kiwi_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 1
-        width: 45
-        height: 66
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5aff1dae79640ed4a85731d312653706
-      internalID: -1658208059
+      spriteID: 7d0e7feb568db6a41959417c2e1e9758
+      internalID: -1771613543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_2
+      name: Kiwi_2
       rect:
         serializedVersion: 2
-        x: 95
-        y: 1
-        width: 45
-        height: 66
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8820a87eacaa613418f9d69799d1f548
-      internalID: -2036758042
+      spriteID: e660a529da5e7464f9f674879a153b15
+      internalID: -481195063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_3
+      name: Kiwi_3
       rect:
         serializedVersion: 2
-        x: 142
-        y: 1
-        width: 45
-        height: 66
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 910fb11c8a95dd34cad78d8a171303a3
-      internalID: -2067599984
+      spriteID: e5b17a57fd65a3d4c97ec5f8c7b3b793
+      internalID: 1444436601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_4
+      name: Kiwi_4
       rect:
         serializedVersion: 2
-        x: 189
-        y: 1
-        width: 45
-        height: 66
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db9b015a6bc4b0543bfac5fbe2258d62
-      internalID: 1772527294
+      spriteID: e54f431285ea95942bb2f397011fd7d4
+      internalID: -142787788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_5
+      name: Kiwi_5
       rect:
         serializedVersion: 2
-        x: 236
-        y: 1
-        width: 45
-        height: 66
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a82c1d519c950404495fcb524b5da59a
-      internalID: -1567135061
+      spriteID: d208d4f1cd79bbf44aa41ef9d4123127
+      internalID: 761885564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_6
+      name: Kiwi_6
       rect:
         serializedVersion: 2
-        x: 283
-        y: 1
-        width: 45
-        height: 66
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0cb6130d6482a64096efaeea422f733
-      internalID: 2044338910
+      spriteID: ca2272e915929ab4bad3adafec12bf03
+      internalID: -1641048972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_7
+      name: Kiwi_7
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1
-        width: 45
-        height: 66
+        x: 224
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63c1bf86114565542b9ccc9502f1653e
-      internalID: -812117955
+      spriteID: ce4cc72d7588d6447a1aaa7b2caa9ed7
+      internalID: -550113494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_8
+      name: Kiwi_8
       rect:
         serializedVersion: 2
-        x: 377
-        y: 1
-        width: 45
-        height: 66
+        x: 256
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee8be79c0ec2a8e4ba9784bdd9ba3274
-      internalID: 582102732
+      spriteID: a9043b386dfac674ab607b8c08517e5a
+      internalID: 1936881846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_9
+      name: Kiwi_9
       rect:
         serializedVersion: 2
-        x: 424
-        y: 1
-        width: 45
-        height: 66
+        x: 288
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ff2ca6d944753040bd8bd4657d87458
-      internalID: -174799798
+      spriteID: 0defb69b8d8e36041acd9dafa0713cd2
+      internalID: -671747073
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_10
+      name: Kiwi_10
       rect:
         serializedVersion: 2
-        x: 471
-        y: 1
-        width: 45
-        height: 66
+        x: 320
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06a8798931d85ca498fec2f9e7510d6f
-      internalID: 1424293048
+      spriteID: 492b46ad526904640b41e0394b54552a
+      internalID: -1760728243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BossHeadIdle_11
+      name: Kiwi_11
       rect:
         serializedVersion: 2
-        x: 518
-        y: 1
-        width: 45
-        height: 66
+        x: 352
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4dd0fa499f70e94c8fa0ae639e46073
-      internalID: 518113749
+      spriteID: a59ed6c9d75cff6469b55afefce7fff5
+      internalID: -241285890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kiwi_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599ba4484b98d094194d81103e2249cb
+      internalID: -747809965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kiwi_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc6ae3003e58fa4cb0a0e46cb18add3
+      internalID: 167089974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kiwi_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf57f7dbac6f45a42b7bfa4a1548f294
+      internalID: 1292515229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kiwi_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9f97d6b1e134a4c9a2c4d7129479e8
+      internalID: -1190999842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kiwi_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7cf507732e5bd4a85d0d57f633db5e
+      internalID: -819039001
       vertices: []
       indices: 
       edges: []
@@ -385,18 +490,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BossHeadIdle_0: -1734386131
-      BossHeadIdle_1: -1658208059
-      BossHeadIdle_10: 1424293048
-      BossHeadIdle_11: 518113749
-      BossHeadIdle_2: -2036758042
-      BossHeadIdle_3: -2067599984
-      BossHeadIdle_4: 1772527294
-      BossHeadIdle_5: -1567135061
-      BossHeadIdle_6: 2044338910
-      BossHeadIdle_7: -812117955
-      BossHeadIdle_8: 582102732
-      BossHeadIdle_9: -174799798
+      Kiwi_0: 871071450
+      Kiwi_1: -1771613543
+      Kiwi_10: -1760728243
+      Kiwi_11: -241285890
+      Kiwi_12: -747809965
+      Kiwi_13: 167089974
+      Kiwi_14: 1292515229
+      Kiwi_15: -1190999842
+      Kiwi_16: -819039001
+      Kiwi_2: -481195063
+      Kiwi_3: 1444436601
+      Kiwi_4: -142787788
+      Kiwi_5: 761885564
+      Kiwi_6: -1641048972
+      Kiwi_7: -550113494
+      Kiwi_8: 1936881846
+      Kiwi_9: -671747073
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
