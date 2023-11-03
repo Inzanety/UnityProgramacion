@@ -7,13 +7,13 @@ public class BossHead : MonoBehaviour
 {
     public GameObject Jhon;
     private float LastShoot;
-    public GameObject BulletEnemy;  
-    private int Life = 5;
+    public GameObject BulletEnemy; 
+    private int Life = 5; //Le asignamos la vida
     public GameObject Bossbody;
 
     private void Update()
     {
-        if (Jhon == null) return;
+        if (Jhon == null) return; //este codigo es el mismo que el del grunt
 
         Vector3 direction = Jhon.transform.position - transform.position;
         if (direction.x >= 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);

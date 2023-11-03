@@ -15,8 +15,8 @@ public class JhonMov : MonoBehaviour
     private bool Grounded;
     private int Life = 5;
 
-    [Header("Sonidos")]
-    [SerializeField] GameObject SaltoJhon;
+    [Header("Sonidos")] //Parametro para que se muestre en el Inspector, hace que se vea mas ordenado
+    [SerializeField] GameObject SaltoJhon; //Es el Objeto que se va a crear generando el sonido 
     [SerializeField] GameObject DisparoJhon;
     void Start()
     {
@@ -84,17 +84,17 @@ public class JhonMov : MonoBehaviour
         Life = Life - 1;
         if (Life == 0) Destroy(gameObject);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) //Si Jhon colisiona con:
     {
-        if (collision.gameObject.CompareTag("Manzana"))
+        if (collision.gameObject.CompareTag("Manzana")) //Si colisiona con la manzana se ejecuta el codigo anterior
         {
             VidaApple.ItemManzana(collision, Life);
         }
-        if (collision.gameObject.CompareTag("Platano"))
+        if (collision.gameObject.CompareTag("Platano"))// Si colisiona con el Platano
         {
             VidaApple.ItemPlatano(collision, Life);
         }
-        if (collision.gameObject.CompareTag("Kiwi"))
+        if (collision.gameObject.CompareTag("Kiwi"))//Si colisiona con el Kiwi
         {
             VidaApple.ItemKiwi(collision, Life);
 

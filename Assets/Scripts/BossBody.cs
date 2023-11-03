@@ -10,7 +10,7 @@ public class BossBody : MonoBehaviour
 
     private void Update()
     {
-        if (BossHead == null)
+        if (BossHead == null) //Colocamos que si la cabeza desaparece entonces tambien se destruye el cuerpo
             Destroy(gameObject);
     }
 }
