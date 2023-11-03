@@ -22,6 +22,7 @@ public class JhonMov : MonoBehaviour
     {
         Animator = GetComponent<Animator>();
         Fisicas = GetComponent<Rigidbody2D>();
+        
     }
 
 
@@ -82,5 +83,21 @@ public class JhonMov : MonoBehaviour
     {
         Life = Life - 1;
         if (Life == 0) Destroy(gameObject);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Manzana"))
+        {
+            VidaApple.ItemManzana(collision, Life);
+        }
+        if (collision.gameObject.CompareTag("Platano"))
+        {
+            VidaApple.ItemPlatano(collision, Life);
+        }
+        if (collision.gameObject.CompareTag("Kiwi"))
+        {
+            VidaApple.ItemKiwi(collision, Life);
+
+        }
     }
 }
