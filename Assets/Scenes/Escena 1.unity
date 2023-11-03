@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 95660852}
   m_Layer: 0
   m_Name: Kiwi
-  m_TagString: Untagged
+  m_TagString: Kiwi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,7 +203,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.003926754, y: 0.0013087988}
@@ -800,6 +800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488820184}
   - component: {fileID: 488820183}
+  - component: {fileID: 488820185}
   m_Layer: 0
   m_Name: grunt
   m_TagString: Untagged
@@ -874,6 +875,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1095220737}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &488820185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488820182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a60fc9378c0e3e4d96fa26f368d3cca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Jhon: {fileID: 642077221}
+  BulletEnemy: {fileID: 2431444037584968752, guid: 6a735a2b9b37e384b947beac4ccb8d48, type: 3}
 --- !u!1 &518247991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1299,7 @@ GameObject:
   - component: {fileID: 642077227}
   m_Layer: 0
   m_Name: Jhon
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1469,7 +1484,7 @@ GameObject:
   - component: {fileID: 688896348}
   m_Layer: 0
   m_Name: Banana
-  m_TagString: Untagged
+  m_TagString: Platano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1503,7 +1518,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.001308918, y: 0.0013087988}
@@ -9752,7 +9767,7 @@ GameObject:
   - component: {fileID: 1829649892}
   m_Layer: 0
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: Manzana
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9786,7 +9801,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0052349567, y: -0.009161472}
@@ -10143,6 +10158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2037441478}
   - component: {fileID: 2037441477}
+  - component: {fileID: 2037441479}
   m_Layer: 0
   m_Name: grunt (1)
   m_TagString: Untagged
@@ -10217,6 +10233,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1095220737}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2037441479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037441476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a60fc9378c0e3e4d96fa26f368d3cca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Jhon: {fileID: 642077221}
+  BulletEnemy: {fileID: 2431444037584968752, guid: 6a735a2b9b37e384b947beac4ccb8d48, type: 3}
 --- !u!1 &2135611464
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,19 +4,48 @@ using UnityEngine;
 
 public class VidaApple : MonoBehaviour
 {
-    
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            GetComponent<SpriteRenderer>().enabled = false;
-            
-            
-            
 
+    public static void ItemManzana(Collision2D collision,int Life)
+    {
+        if (Life < 5 )
+        {
+            Life += 3;
+            Destroy( collision.gameObject );
+        
+        }
+        else if  (Life >= 5 ) 
+        {
+            Life = 5;
+            Destroy( collision.gameObject );
         }
     }
+    public static void ItemPlatano(Collision2D collision, int Life)
+    {
+        if (Life < 5)
+        {
+            Life += 1;
+            Destroy(collision.gameObject);
 
-   
+        }
+        else if (Life >= 5)
+        {
+            Life = 5;
+            Destroy(collision.gameObject);
+        }
+    }
+    public static void ItemKiwi(Collision2D collision, int Life)
+    {
+        if (Life < 5)
+        {
+            Life += 2;
+            Destroy(collision.gameObject);
+
+        }
+        else if (Life >= 5)
+        {
+            Life = 5;
+            Destroy(collision.gameObject);
+        }
+    }
 }
 
