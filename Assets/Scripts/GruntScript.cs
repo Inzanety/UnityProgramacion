@@ -20,7 +20,7 @@ public class GruntScript : MonoBehaviour
 
         float distance = Mathf.Abs(Jhon.transform.position.x - transform.position.x);
 
-        if (distance < 1.0f && Time.time > LastShoot + 0.25f)
+        if (distance < 1.0f && Time.time > LastShoot + 0.55f)
         {
             Shoot();
             LastShoot = Time.time;

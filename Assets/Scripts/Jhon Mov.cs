@@ -15,6 +15,9 @@ public class JhonMov : MonoBehaviour
     private bool Grounded;
     private int Life = 5;
 
+    [Header("Sonidos")]
+    [SerializeField] GameObject SaltoJhon;
+    [SerializeField] GameObject DisparoJhon;
     void Start()
     {
         Animator = GetComponent<Animator>();
@@ -46,11 +49,13 @@ public class JhonMov : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W)&&Grounded)
         {
             Jump();
+            Instantiate (SaltoJhon);
 
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Shoot();
+            Instantiate(DisparoJhon);
         }
     }
     private void FixedUpdate()
@@ -65,6 +70,7 @@ public class JhonMov : MonoBehaviour
 
     private void Shoot()
     {
+        
         Vector3 direction;
         if (transform.localScale.x == 1.0f) direction = Vector3.right;
         else direction = Vector3.left;
