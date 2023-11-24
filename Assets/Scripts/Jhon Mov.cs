@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JhonMov : MonoBehaviour
 {
@@ -82,8 +83,12 @@ public class JhonMov : MonoBehaviour
     public void Hit()
     {
         Life = Life - 1;
-        if (Life == 0) Destroy(gameObject);
-    }
+        if (Life == 0)
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene("Escena 1");
+        }
+     }
     private void OnCollisionEnter2D(Collision2D collision) //Si Jhon colisiona con:
     {
         if (collision.gameObject.CompareTag("Manzana")) //Si colisiona con la manzana se ejecuta el codigo anterior
