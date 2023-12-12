@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class plataformas : MonoBehaviour
 {
-    public float speed = 0.5f;
-    private float waitTime;
-    public Transform[] moveSpots;
-    public float starWaitTime = 2;
+    public float speed = 0.5f; // la velocidad en que se moverá
+    private float waitTime; //el tiempo de espera
+    public Transform[] moveSpots; //el lugar por donde se moverá la plataforma
+    public float starWaitTime = 2; //el timepo de inicio de la plataforma
     private int i = 0;
 
 
         private void Start()
     {
-        waitTime = starWaitTime;
+        waitTime = starWaitTime; 
 
     }
 

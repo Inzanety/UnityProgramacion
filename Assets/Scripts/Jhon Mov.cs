@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement; //Usamos el directorio de Unity para controlar la Escena
 
 public class JhonMov : MonoBehaviour
 {
@@ -86,7 +86,7 @@ public class JhonMov : MonoBehaviour
         if (Life == 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("Escena 1");
+            SceneManager.LoadScene("Escena 1"); //Cada vez que se destruya empieza en la Escena 1
         }
      }
     private void OnCollisionEnter2D(Collision2D collision) //Si Jhon colisiona con:
