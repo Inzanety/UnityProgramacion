@@ -14,7 +14,7 @@ public class JhonMov : MonoBehaviour
     private Animator Animator;
     private float Horizontal;
     private bool Grounded;
-    private int Life = 5;
+    private int Life = 10;
 
     [Header("Sonidos")] //Parametro para que se muestre en el Inspector, hace que se vea mas ordenado
     [SerializeField] GameObject SaltoJhon; //Es el Objeto que se va a crear generando el sonido 

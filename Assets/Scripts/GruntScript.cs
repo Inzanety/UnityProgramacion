@@ -20,7 +20,7 @@ public class GruntScript : MonoBehaviour
 
         float distance = Mathf.Abs(Jhon.transform.position.x - transform.position.x); //calculo para que tenga una distancia de disparo y no dispare de lejos
 
-        if (distance < 1.0f && Time.time > LastShoot + 0.55f) //Le damos un tiempo y una condicion al disparo
+        if (distance < 1.0f && Time.time > LastShoot + 1.5f) //Le damos un tiempo y una condicion al disparo
         {
             Shoot();
             LastShoot = Time.time;
