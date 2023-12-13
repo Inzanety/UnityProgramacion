@@ -1,30 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class RespawnPlayer : MonoBehaviour
 {
-    private float checkPointPositionX, checkPointPositionY;
-    void Start()
-    {
-        PlayerRespawn();
-    }
+    private Transform puntoInicio;
 
-    // Update is called once per frame
-    public void ReachedCheckPoint(float x, float y)
+    private void Awake()
     {
-        Debug.Log("Se guardo coordenadas");
-        PlayerPrefs.SetFloat("checkPointPositionX",x);
-        PlayerPrefs.SetFloat("checkPointPositionY", y);
-    }
-    public void PlayerRespawn()
-    {
-        float checkpointX = PlayerPrefs.GetFloat("checkPointPositionX");
-        float checkpointY = PlayerPrefs.GetFloat("checkPointPositionY");
-
-        transform.position = new Vector2(checkpointX, checkpointY);
-
-        gameObject.SetActive(true);
-    }
+        puntoInicio = GameObject.FindGameObjectWithTag("PuntoInicioPlayer").transform;
+        transform.position = puntoInicio.position;
+    } 
 }

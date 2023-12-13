@@ -8,6 +8,7 @@ TagManager:
   - Platano
   - Kiwi
   - Ground
+  - PuntoInicioPlayer
   layers:
   - Default
   - TransparentFX

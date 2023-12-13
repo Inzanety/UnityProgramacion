@@ -1,17 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
-{
-
-    private void OnTriggerEnter2D(Collider2D collision) // si Colisiona con el collider
+{  
+    private int checkpoint;
+    CaidaScript Caidascript;
+    private void Start()
     {
-        if (collision.CompareTag("Player")) //si el Player tiene el tag de "Player" colisiona con la caja de colision 
+        Caidascript = FindObjectOfType<CaidaScript>();
+    }
+    private void Update()
+    {
+        checkpoint = Caidascript.Getchekpoint();
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<RespawnPlayer>().ReachedCheckPoint(transform.position.x, transform.position.y); //se general el punto de spawn
-            Debug.Log("choque"); //Esto es un debug en la consola para saber si colisiona
-            GetComponent<Animator>().enabled = true;//Se enciende la animacion de bandera iddle 
+            if (checkpoint  < 2)
+            {
+                checkpoint ++;
+                Caidascript.Setchekpoint(checkpoint);
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                
+            }                     
+        }
+    }
+    
+    public void SpawnCheckpoint(int valor,Transform checkpoint,Transform checkpoint2)
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if(valor == 0)
+        {
+            player.transform.position = GameObject.FindGameObjectWithTag("PuntoInicioPlayer").transform.position;
+        }
+        else if (valor == 1) {
+            player.transform.position = checkpoint.position;
+        }
+        else if (valor == 2)
+        {
+            player.transform.position = checkpoint2.position;
         }
     }
 }
