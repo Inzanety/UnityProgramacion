@@ -261,6 +261,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57bc8d5dfe4bb424d886a09bc2579b84, type: 3}
+--- !u!4 &153866871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1826532753802602958, guid: 57bc8d5dfe4bb424d886a09bc2579b84, type: 3}
+  m_PrefabInstance: {fileID: 1732649673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &160866653
 GameObject:
   m_ObjectHideFlags: 0
@@ -62900,6 +62905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkpoint1: {fileID: 369463887}
   checkpoint2: {fileID: 873816728}
+  checkpoint3: {fileID: 153866871}
+  checkpoint4: {fileID: 0}
 --- !u!61 &1504218540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -63006,8 +63013,8 @@ Transform:
   m_GameObject: {fileID: 1504218538}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.98, y: -4.93, z: 0}
-  m_LocalScale: {x: 17.444527, y: 0.66496, z: 1}
+  m_LocalPosition: {x: -3.6087, y: -5.797, z: 0}
+  m_LocalScale: {x: 20.186806, y: 1.9374635, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -65420,9 +65427,9 @@ SceneRoots:
   - {fileID: 940479069}
   - {fileID: 522399178}
   - {fileID: 1504218542}
+  - {fileID: 136100242}
   - {fileID: 489943385}
   - {fileID: 1732649673}
-  - {fileID: 136100242}
   - {fileID: 1028902425}
   - {fileID: 1762492213}
   - {fileID: 1748726759}

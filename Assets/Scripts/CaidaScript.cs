@@ -7,6 +7,8 @@ public class CaidaScript : MonoBehaviour
     CheckPoint checkpointScript;
     [SerializeField] private Transform checkpoint1;
     [SerializeField] private Transform checkpoint2;
+    [SerializeField] private Transform checkpoint3;
+    [SerializeField] private Transform checkpoint4;
     int checkpoint = 0;
     private void Awake()
     {
@@ -20,7 +22,7 @@ public class CaidaScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            checkpointScript.SpawnCheckpoint(checkpoint,checkpoint1,checkpoint2);
+            checkpointScript.SpawnCheckpoint(checkpoint,checkpoint1,checkpoint2, checkpoint3, checkpoint4);
         }
     }
     public int Getchekpoint()
